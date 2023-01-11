@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #ff5f20;
+    --secondary-color: #0b063f;
+
+
+    --container-color: #edf2f7;
+    --bgcolor:#F0F2F5;
+
+
+    --button-color: #ff5f20;
+    --button-hover-color: #ff5f20;
+    --button-text-color: #fff;
+    --button-hover-text-color: #fff;
+
+    --primary-font-color: #ff5f20;
+    --border-color: #0b063f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
