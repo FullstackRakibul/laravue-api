@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 
+
+
+@layer base{
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+    body{
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+}
+
+@layer components {
+    .card {
+        @apply 
+        bg-white shadow-sm rounded-md overflow-hidden w-72 min-h-[10rem];
+    }
+    .card:hover {
+        @apply 
+        shadow-lg;
+    }
+
+    .badge {
+        @apply 
+        bg-primary-color text-white px-2 py-1 rounded-full text-xs font-light ;
+    }
+    .discount-badge {
+        @apply 
+        bg-secondary-color text-white px-2 py-1 rounded-full text-xs font-light ;
+    }
+
+    .product-title {
+        @apply 
+        text-primary-color font-semibold text-xl overflow-ellipsis overflow-hidden whitespace-nowrap;
+    }
+    .buy-now {
+        @apply 
+        bg-primary-color hover:bg-secondary-color hover:text-white px-6 py-2 rounded-md font-medium tracking-wider transition
+    }
+    .wishlist {
+        @apply 
+        flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md 
+    }
+
+
+}
+
 :root {
     --primary-color: #ff5f20;
     --secondary-color: #0b063f;
@@ -19,6 +64,8 @@
 
     --primary-font-color: #ff5f20;
     --border-color: #0b063f;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-heading: 'Titillium Web', sans-serif;
+    /* --font-body: 'Nunito', sans-serif; */
+
     
 }

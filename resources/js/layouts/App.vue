@@ -8,7 +8,7 @@ import Footer from "../components/footer/Footer.vue";
     <div class="">
         <Header/>
         
-        <div class="container bg-stone-200">
+        <div class="bg-stone-200">
                 <router-view v-slot="{Component, route}">
                     <div :key="route.path">
                         <Component :is="Component"/>

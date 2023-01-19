@@ -2,7 +2,7 @@
     <div>
         <a href="#" class="flex flex-col items-center p-1 bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
             <div class=" bg-slate-300 rounded-md">
-                <img src="props.image" class="w-40 rounded-md" alt="">
+                <img :src="props.image" class="w-40 rounded-md" alt="">
             </div>
 
             <div class="flex flex-col justify-between p-4 leading-normal">

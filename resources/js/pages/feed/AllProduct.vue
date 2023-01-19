@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="flex flex-wrap gap-2 py-2">
+        <div class=" container flex flex-wrap gap-2 py-2">
             <!-- <div class=" h-96 bg-primary-color rounded-md w-32 text-white">
                 <h2 class="text-xl text-black">Find in Genres</h2>
                 <ul class="list-disc">
@@ -16,8 +16,8 @@
                     <li><a href="#" class="hover:text-black hover:ml-2">Fantasy</a></li>
                 </ul>
             </div> -->
-            <div class="h-full flex-auto  bg-white rounded-md p-2">
-                <h2 class="text-secondary-color text-2xl">Selling Post</h2>
+            <h2 class="text-secondary-color text-2xl">Selling Post</h2>
+            <div class=" flex flex-wrap justify-center gap-3">
                 <ProductCard 
                 v-for="product in products" 
                 :id="product.id"

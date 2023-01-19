@@ -15,8 +15,34 @@
                                 </div>
                         </div>
                 </div>
+
+                <!-- Nav menu start from here -->
+                <nav class="fixed top-0 left-0 bg-white w-full shadow z-50">
+                        <div class="container m-auto flex justify-between item-center text-primary-color">
+                                <h1 class="pl-8 py-4 text-xl font-semibold">Boi Haat</h1>
+                                <ul class=" hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
+                                    <li class="hover:bg-gray-300 py-4 px-8 ">Home</li>
+                                    <li class="hover:bg-gray-300 py-4 px-8 ">Home</li>
+                                    <li class="hover:bg-gray-300 py-4 px-8 ">Home</li>
+                                    <li class="hover:bg-gray-300 py-4 px-8 ">Home</li>
+                                </ul>
+                                <button class=" block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-gray-100 group  ">
+                                        <ion-icon name="grid"></ion-icon>
+                                        <div class="absolute top-0 -right-full opacity-0 h-screen w-8/12 bg-white border transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+                                        <ul class="flex flex-col items-center w-full text-base cursor-pointer pt-10">
+                                                <li class="hover:bg-gray-200 py-4 px-6 w-full">Home</li>
+
+                                        </ul>
+
+                                        
+
+                                        </div>
+                                </button>
+                        </div>
+                </nav>
+                <!--Navmenu ends here-->
+                <!--Ends-->
         </div>
-        
 </template>
 
 <script setup >
