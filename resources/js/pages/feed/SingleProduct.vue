@@ -1,138 +1,101 @@
 <template>
     <div>
 
-<!-- Treditional Product Page design start from here -->
-        <!-- <form action="submit" class=" mx-auto p-5">
-            <div class="container bg-white flex flex-wrap justify-around gap-3 border border-primary-color rounded-md  p-5">
-                <div class="p-3">
-                    <img class="border border-primary-color shadow-md rounded-md p-2" width="300" :src="product.image"   alt="Product Image">
-                </div>
-                <div class="p-3">
-                    <h2 class="font-semibold text-2xl mb-2 text-primary-color">{{product.name}}
-                    </h2>
-                    <div class="flex flex-wrap">
-                        <span class="w-5/12 text-secondary-color">Author</span>
-                        <span class="w-2/12">:</span>
-                        <span class="w-5/12">{{ product.author }}</span>
-                    </div>
-                    <div class="flex flex-wrap">
-                        <span class="w-5/12 text-secondary-color">Owner</span>
-                        <span class="w-2/12">:</span>
-                        <span class="w-5/12">{{product.owner}}</span>
-                    </div>
-                    <div class="flex flex-wrap">
-                        <span class="w-5/12 text-secondary-color">Expected Price</span>
-                        <span class="w-2/12">:</span>
-                        <span class="w-5/12 text-primary-color text-xl">৳ {{ product.expectedPrice }}</span>
-                    </div>
-                    <div class="flex flex-wrap">
-                        <span class="w-5/12 text-secondary-color">Offer Price</span>
-                        <span class="w-2/12">:</span>
-                        <span class="w-5/12 text-primary-color text-xl">
-                            <input type="text" class=" border border-b-primary-color">
-                        </span>
-                    </div>
-                    <div class="flex flex-wrap justify-around gap-2 p-3">
-                        <button type="submit" class="p-1.5 rounded-md px-3 bg-primary-color text-white border hover:border-primary-color hover:bg-white hover:text-black">Offer now</button>
-                    </div>
-                    
-                    <div class="">
-                        <div class="flex flex-wrap">
-                            <h3 class="text-secondary-color">Description</h3>
-                            <p>{{ product.description }}</p>
+        <!-- Product Page design with tailwind css start-->
+        <div class="container p-5">
+            <div class="flex flex-wrap bg-white my-5 rounded-md">
+                    <div class=" p-5 flex flex-col items-start lg:w-1/2 md:w-full">
+                        <div class="flex items-center pr-10 space-x-2">
+                            <span class="text-3xl text-primary-color font-semibold">01</span>
+                            <span class="text-xl text-secondary-color font-normal">/04</span>
                         </div>
-                    </div>
-
+                        <div class="flex pr-10 space-x-16">
+                            <button class="p-3">&#8592;</button>
+                            <button class="p-3">&#8594;</button>
+                        </div>
+                        <img class="rounded-sm p-10 w-full h-full object-cover" :src="product.image"   alt="Product Image"/>
+                        <!-- <div class=" absolute pl-1 w-[440px] h-[200px] bg-gradient-to-r from-transparent to-primary-color top-52 right-0" /> -->
+                        <div class="flex pt-5 pr-20 space-x-4">
+                            <div class="w-24 h-24 border-2 border-primary-color p-1 rounded-md">
+                                <img class="w-full h-full object-cover" :src="product.image"   alt="Product Image"/>
+                            </div>
+                            <div class="w-24 h-24 border-2 border-primary-color p-1 rounded-md">
+                                <img class="w-full h-full object-cover" :src="product.image"   alt="Product Image"/>
+                            </div>
+                            <div class="w-24 h-24 border-2 border-primary-color p-1 rounded-md">
+                                <img class="w-full h-full object-cover" :src="product.image"   alt="Product Image"/>
+                            </div>
+                            <div class="w-24 h-24 border-2 border-primary-color p-1 rounded-md">
+                                <img class="w-full h-full object-cover" :src="product.image"   alt="Product Image"/>
+                            </div>
+                        </div>
                 </div>
-            </div>
-        </form> -->
 
-<!-- Treditional Product page design ends Here -->
-
-        <!-- <div class="flex flex-wrap gap-2 my-2 border border-purple-600 p-3 hover:shadow-md rounded-md">
-            <div class=" max-w-xs flex flex-wrap rounded overflow-hidden shadow-lg mx-auto bg-orange-500">
-                <v-if status=flase>
-                    <img class=" w-6/12 " src="../../../assets/book/kajal.jpg" alt="Product Image">
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">{{ product.name }}</div>
-                        <p class="text-gray-700 text-base">
-                        {{props.description}}
-                        </p>
-                        <p>Product Id  : {{ product.id }}</p>
+                <div class=" p-5 rounded flex flex-col lg:w-1/2 md:w-full">
+                <div class="max-w-md">
+                    <div class="flex item-center text-sm pt-9">
+                        <span class="text-secondary-color">Book &nbsp;</span>
+                        <span class="text-primary-color">/ Single Book</span>
                     </div>
-                    <div class="px-6 py-4">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Author</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{ product.author }}</span>
+                    <div class="pt-10">
+                        <h1 class=" text-3xl font-light text-primary-color tracking-wide">{{ product.name }}</h1>
                     </div>
-                    <div class="px-6 py-4">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Price</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{ product.expectedPrice }}</span>
+                    <div class="flex items-center justify-between pt-4">
+                        <span class="text-2xl">৳ {{ product.expectedPrice }}</span>
+                        <div>
+                            <div class="flex space-x-px">
+                                <img src="../../../assets/star.png" alt="">
+                                <img src="../../../assets/star.png" alt="">
+                                <img src="../../../assets/star.png" alt="">
+                                <img src="../../../assets/star.png" alt="">
+                                <img src="../../../assets/star.png" alt="">
+                                <span class="text-xs ml-2 text-primary-color font-semibold">156 Reviews</span>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="px-6 py-4">
-                        <span><button class="p-2 mx-2 bg-white hover:shadow-md rounded-md hover:rounded-xl ">Buy Now</button></span>
-                        <span><button class="p-2 mx-2 bg-gray-300">Add to Cart</button></span>
+                    <div class=" bg-bgcolor p-5">
+                        <p class="font-normal text-secondary-color"> Owner Name : {{ product.owner }}</p>
+                        <p>Author Namae : {{ product.author }}</p>
                     </div>
-
-                </v-if>
-            </div>
-        </div> -->
-
-
-        <!-- profession card design with tailwind css start-->
-
-        <div class="container py-5 mx-auto">
-            <div class="card">
-                <!-- product Image -->
-                <img class="w-full h-full object-cover" :src="product.image"   alt="Product Image">
-                <!-- product details -->
-                <div class="py-5 px-2 flex flex-col gap-2">
-                    <!-- product tile-->
-                    <h2 class="product-title" title="{{ product.name }}">
-                    {{ product.name }}
-                    </h2>
-                    <div class="flex items-center gap-2">
-                        <span class="badge">{{ product.author }} </span>
-                        <span class="badge">{{ product.owner }} </span>
-                        
+                    <div class="flex pt-8 space-x-4">
+                        <button class="w-5 h-5 rounded-full bg-slate-600 hover:shadow-md"></button>
+                        <button class="w-5 h-5 rounded-full bg-red-600 hover:shadow-md"></button>
+                        <button class="w-5 h-5 rounded-full bg-lime-700 hover:shadow-md"></button>
+                        <button class="w-5 h-5 rounded-full bg-emerald-800 hover:shadow-md"></button>
                     </div>
-                <!-- product price -->
-                <div class="product-price">
-                    <span class="price">৳ {{ product.expectedPrice }}</span>
-                    <div class="flex items-center gap-2 mt-1">
-                        <span class="text-sm line-through opacity-50"> ৳ 500 </span>
-                        <span class="discount-badge"> save 20%</span>
-                    </div>
-                    <!-- product rating -->
-                    <span class="flex item-center mt-1">
-                        <img src="../../../assets/star.png" alt="">
-                        <img src="../../../assets/star.png" alt="">
-                        <img src="../../../assets/star.png" alt="">
-                        <img src="../../../assets/star.png" alt="">
-                        <img src="../../../assets/star.png" alt="">
-                        <span class="text-xs ml-2 text-gray-500">156 Reviews</span>
-                    </span>
-
-                    <!-- Product action Button -->
-
-                    <div class="mt-5 flex gap-2">
-                        <button class="buy-now">
-                            Buy Now
+                    <div class="flex space-x-6 pt-9">
+                        <div class="flex items-center border border-primary-color rounded-md">
+                            <button class="p-4" @click="increment">
+                                <img class="w-5" src="../../../assets/plus.png" alt="">
+                            </button>
+                            <input class=" text-secondary-color w-12 h-full text-center outline-none "
+                         type="text"/>
+                            <p>{{ value }}</p>
+                            <button class="p-4" @click="decrement">
+                                <img class="w-5" src="../../../assets/minus.png" alt="">
+                            </button>
+                        </div>
+                        <button class="py-4 text-sm uppercase px-14 font-bold text-white bg-primary-color hover:bg-white border hover:border-primary-color hover:shadow-sm hover:text-primary-color rounded-md ">
+                            Add To Cart
                         </button>
-                        <button class="wishlist">
-                            <img class="" src="../../../assets/add-to-favorites.png" alt="">
-                        </button>
-                        <button class="wishlist">
-                            <img class="" src="../../../assets/commit-git.png" alt="">
+                    </div>
+                    <div class="pt-8">
+                        <p class="text-secondary-color ">2 Days delivery .</p>
+                    </div>
+                    <div>
+                        <button class="flex flex-row gap-3 pt-6 hover:text-primary-color">
+                            <span><img src="../../../assets/add-to-favorites.png" alt=""/></span>
+                            <span>Add to Wishlist</span> 
+
                         </button>
                     </div>
                 </div>
-
                 </div>
-            </div>
 
+            </div>
         </div>
-        <!-- profession card design with tailwind css end-->
+        <!-- Product Page design with tailwind css end-->
 
 
 
@@ -142,6 +105,8 @@
 </template>
 
 <script setup>
+
+const count = 1;
 
 const props = defineProps({
     id:Number,
@@ -163,7 +128,8 @@ export default {
     
     data() {
         return {
-            product:[]
+            product: [],
+            value:0
         }
     },
     mounted() {
@@ -172,7 +138,17 @@ export default {
         .then((response) => {
             this.product = response.data
         })
-    }
+    },
+    methods: {
+        increment() {
+            this.value +=1;
+        },
+        decrement() {
+            this.value -=1;
+        }
+    },
+    
+    
 }
 </script>
 
