@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dokander 2</title>
+        <link rel="fav-icon" type="image/png"  href="{{ asset('../assets/borrowbook.com-logo-fav.png') }}">
 
         <!-- @vite('resources/js/app.js') -->
+
     </head>
     <body>
         <div id="app">

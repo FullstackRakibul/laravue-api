@@ -3,7 +3,8 @@
 
         <!-- Product Page design with tailwind css start-->
         <div class="container p-5">
-            <div class="flex flex-wrap bg-white my-5 rounded-md">
+            <form action="submit">
+                            <div class="flex flex-wrap bg-white my-5 rounded-md">
                     <div class=" p-5 flex flex-col items-start lg:w-1/2 md:w-full">
                         <div class="flex items-center pr-10 space-x-2">
                             <span class="text-3xl text-primary-color font-semibold">01</span>
@@ -65,19 +66,12 @@
                         <button class="w-5 h-5 rounded-full bg-emerald-800 hover:shadow-md"></button>
                     </div>
                     <div class="flex space-x-6 pt-9">
-                        <div class="flex items-center border border-primary-color rounded-md">
-                            <button class="p-4" @click="increment">
-                                <img class="w-5" src="../../../assets/plus.png" alt="">
-                            </button>
-                            <input class=" text-secondary-color w-12 h-full text-center outline-none "
+                        <div class="flex flex-auto items-center">
+                            <input class=" text-secondary-color w-full h-full text-center rounded-md outline-none border border-primary-color "
                          type="text"/>
-                            <p>{{ value }}</p>
-                            <button class="p-4" @click="decrement">
-                                <img class="w-5" src="../../../assets/minus.png" alt="">
-                            </button>
                         </div>
-                        <button class="py-4 text-sm uppercase px-14 font-bold text-white bg-primary-color hover:bg-white border hover:border-primary-color hover:shadow-sm hover:text-primary-color rounded-md ">
-                            Add To Cart
+                        <button type="submit" class="py-4 text-sm uppercase px-14 font-normal text-white bg-primary-color hover:bg-white border hover:border-primary-color hover:shadow-sm hover:text-primary-color rounded-md ">
+                            Create Offer
                         </button>
                     </div>
                     <div class="pt-8">
@@ -94,6 +88,8 @@
                 </div>
 
             </div>
+            </form>
+
         </div>
         <!-- Product Page design with tailwind css end-->
 

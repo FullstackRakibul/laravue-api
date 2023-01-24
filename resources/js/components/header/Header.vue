@@ -19,7 +19,7 @@
                 <!-- Nav menu start from here -->
                 <nav class=" bg-white w-full shadow z-50">
                         <div class="container m-auto flex justify-between item-center text-primary-color ">
-                                <img src="../../../assets/fullstackrakibul-logo.png" class=" w-52 " alt="Full Stack Rakibul">
+                                <img src="../../../assets/borrowbook-logo-main.png" class=" w-60 " alt="Full Stack Rakibul">
                                 <ul class=" hidden md:flex items-center pr-10 text-base font-semibold cursor-pointer">
 
                                     <router-link class="hover:bg-gray-300 py-4 px-8  text-black hover:text-primary-color mx-3 text-lg  font-normal tracking-wider" v-for="nav of NavList" :key="nav" :to=nav.path>{{nav.name }}

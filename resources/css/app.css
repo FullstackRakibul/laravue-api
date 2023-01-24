@@ -50,7 +50,7 @@
 
 :root {
     --primary-color: #ff5f20;
-    --secondary-color: #0b063f;
+    --secondary-color: #4F267B;
 
 
     --container-color: #edf2f7;
@@ -63,7 +63,7 @@
     --button-hover-text-color: #fff;
 
     --primary-font-color: #ff5f20;
-    --border-color: #0b063f;
+    --border-color: #4F267B;
     --font-heading: 'Titillium Web', sans-serif;
     /* --font-body: 'Nunito', sans-serif; */
 

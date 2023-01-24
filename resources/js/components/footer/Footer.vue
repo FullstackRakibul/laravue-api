@@ -27,7 +27,7 @@
             </div>
             <div class="w-1/4 p-2 mx-2 px-2 text-white">
                 <h2 class="text-2xl text-white">Contacts</h2>
-                <p> Zaman CNG Station<br> Merul Badda, Dhaka - 1230</p>
+                <p>Zaman CNG Station <br> Merul Badda, Dhaka - 1230</p>
                 <p>Phone: 01625781547</p>
                 <p>Email:rakibul.cse.47@gmail.com </p>
 
